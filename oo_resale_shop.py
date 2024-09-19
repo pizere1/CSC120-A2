@@ -31,7 +31,6 @@ class Computer:
             self.operating_system=new_operating_system
 def main():
     Mac:Computer = Computer("Mac Pro (Late 2013)","3.5 GHc 6-Core Intel Xeon E5",1024, 64,"macOS Big Sur", 2013, 1500)
-    Mac.display()
     Mac.update_price()
     Mac.update_os()
     Mac.display()
