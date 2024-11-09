@@ -3,9 +3,10 @@ from typing import Dict, Optional
 class ResaleShop:
     #Attributes
     inventory: Dict[int, Dict] = {}
-    itemID=0
+    global itemID
 
     def __init__(self) -> None:
+        self.itemID = 0
         print("You created a new Resale Shop")
     #Function for adding a new item to the inventory with buy
     def buy(self, computer: Dict):
