@@ -2,7 +2,7 @@ from Computer import Computer
 from typing import Dict, Optional
 class ResaleShop:
     #Attributes
-    inventory: Dict[int, Computer] = {}
+    inventory: Dict[int, Dict] = {}
     itemID=0
 
     def __init__(self) -> None:
@@ -11,6 +11,7 @@ class ResaleShop:
     def buy(self, computer: Dict):
         self.itemID += 1  # increment itemID
         self.inventory[self.itemID] = computer
+        print("Buying "+self.inventory[self.itemID].description)
         return self.itemID
     #Function for updating the price of a computer
     def update_price(self, item_id: int, new_price: int):
